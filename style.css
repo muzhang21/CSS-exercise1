@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{   margin: 10px;
+    background: #f1f7eb;
+    text-align: justify;
+    font-family: "Lato", sans-serif;
+}
+
+
+
+#title{
+    color: rgb(186,133,30, 1);
+    font-family: "Poppins", sans-serif;
+}
+
+.subtitle{
+    color: rgb(226, 177, 78);
+}
+
+#service-image{
+    margin-top: 10px;
+    display: block;
+    height: 50vh;
+    width: 70%;
+    background: linear-gradient(to right, rgb(138, 138, 138),rgb(138, 138, 138,0.5),rgb(138, 138, 138,0) );
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px double #aaa;
+    padding: 20px;
+
+}
+
+.link{
+    text-decoration: none;
+    
+}
+
+.link:hover{
+    color: violet;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.15em;
+    font-weight: 200;
+}
+
+.italics{
+    font-style: italic;
+    display: block;
+}
+
+#about-us-image{
+    height: 300px;
+    width: 100%;
+    border: 6px solid black;
+    padding-right: 10px;
+}
+.container_flex{
+    height: 300px;
+    background: chartreuse;
+    margin: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_flex_item{
+    background: salmon;
+    margin: 10px;
+    font-size: 2rem;
+    text-align: center;
+    width: 60px;
+    line-height: 60px;
+    
+
+    
+}
+
+.container{
+    height: 200px;
+    background: chartreuse;
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* adjust space or position: horizatally; */
+    justify-content: space-between;
+    /* adjust space or position: vertically; */
+    align-items: center;
+}
+
+.container-item{
+    background: salmon;
+    margin: 10px;
+    font-size: 2rem;
+    text-align: center;
+    width: 60px;
+    line-height: 60px;
+    
+
+    
+}
+
+.grid-container{
+    background: darkblue;
+    margin:10px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    
+    /* justify-content:space-between;
+    align-content: end; */
+    
+}
+
+.grid-item{
+    line-height: 40px;
+    width: 70px;
+    color: darkred;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+    
+    
+}
+.input, textarea{
+    display: block;
+    margin:10px
+}
+
+.submit-button{
+    margin:20px 10px;
+    padding: 10px 15px;
+    border:none;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background:rgb(18, 107, 180);
+    border-radius: 3px;
+            /* object pointed to, time, effection */
+    transition: background 0.3s ease-in-out;
+       /* x-axis +:positive, -:negative; y-axis +:up, -:down */
+    /* transform: translate(50px,30px); */
+    /* transform:scale(1.5); */
+    /* transform: rotate(90deg); */
+    /* transform:skewX(-5deg) */
+
+
+}
+.submit-button:hover{
+    background: rgb(97, 167, 247);
+    
+    
+}
+
+#about-me{
+    animation-name: red-to-black;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 0s; */
+    animation-iteration-count: 2;
+    animation-direction:alternate
+}
+
+@keyframes red-to-black{
+    0%{
+        background: red;
+        transform: translate(0px,0px);
+    }
+    50%{
+        background: yellow;
+        transform: translate(10px,10px);
+    }
+    100%{
+        background: black;
+        transform: translate(20px,20px);
+    }
+}
